@@ -1,0 +1,144 @@
+/* Resetting default styles and setting base font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling for the navigation section */
+.nav-section {
+  width: 100%;
+  padding: 25px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  color: white;
+  flex-wrap: wrap;
+}
+
+/* Styling for the logo */
+.logo {
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* Styling for the search input */
+.Search {
+  width: 20rem;
+  padding: 10px;
+  border: 2px solid rgb(3, 3, 42);
+  border-radius: 5px;
+  font-size: 18px;
+  flex-grow: 1;
+  margin: 10px 0;
+}
+
+/* Styling for the category list */
+.category ul {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 10px 0;
+}
+
+/* Styling for the category list items */
+.category ul li {
+  flex: 1;
+  list-style: none;
+  margin: 0px 15px;
+  font-size: 22px;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Styling for the cart section */
+.cart {
+  display: flex;
+  gap: 20px;
+  cursor: pointer;
+  margin: 10px 0;
+}
+
+/* Styling for the banner box */
+.banner-box {
+  margin-top: 5px;
+}
+
+/* Styling for the banner image */
+.banner-box img {
+  width: 100%;
+}
+
+/* Styling for the men images section */
+.menImages {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+/* Styling for individual men images */
+.menImages img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  transition: transform 0.2s;
+  cursor: pointer;
+  margin: 10px;
+}
+
+/* Transform effect on hover for men images */
+.menImages img:hover {
+  transform: scale(1.1);
+}
+
+/* Media Queries for Responsiveness */
+
+/* For tablets and below */
+@media (max-width: 768px) {
+  .nav-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Search {
+    width: 100%;
+  }
+
+  .category ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .category ul li {
+    margin: 5px 0;
+  }
+
+  .cart {
+    margin-left: 0;
+    justify-content: center;
+  }
+
+  .menImages {
+    justify-content: center;
+  }
+}
+
+/* For mobile phones */
+@media (max-width: 480px) {
+  .nav-section {
+    padding: 10px;
+  }
+
+  .Search {
+    font-size: 16px;
+  }
+
+  .category ul li {
+    font-size: 18px;
+  }
+}
